@@ -1,0 +1,70 @@
+@media(max-width: 600px)
+    .nav-list
+        transition: 2s
+        -webkit-transition: 2s
+        position: fixed
+        flex-direction: column
+        font-size: 1rem
+        width: 100%
+        z-index: -1
+        top: -100%
+
+        &.active
+            transition: 0.6s ease
+            -webkit-transition: 0.6s ease
+            top: 60px
+            padding: 10px 0 10px
+
+        &:before
+            transition: all 0.3s
+            content: ""
+            position: absolute
+            background: var(--nav-bg-color)
+            z-index: -1
+            -webkit-backdrop-filter: blur(3px)
+            backdrop-filter: blur(3px)
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+
+    .menu-hamburguer
+        display: flex
+        position: absolute
+        right: 0
+        cursor: pointer
+        background: unset
+        border-radius: 3px
+        padding: 5px
+        margin-right: 1em
+        gap: 5px
+        width: 30px
+        height: 30px
+
+        .barra
+            display: block
+            width: 90%
+            height: 3px
+            -webkit-transition: all 0.3s ease-in-out
+            transition: all 0.3s ease-in-out
+            background-color: var(--second-color)
+
+        &.active .barra:nth-child(1)
+            transform: translateY(8px) rotate(45deg)
+
+        &.active .barra:nth-child(2)
+            opacity: 0
+
+        &.active .barra:nth-child(3)
+            transform: translateY(-8px) rotate(-45deg)
+
+@media(max-width: 376px)
+    :root
+        font-size: 14px
+
+@media(max-width: 330px)
+    #projects-container
+        grid-template-columns: repeat(auto-fit, 18rem)
+
+    .project-card-container:before
+        width: 18rem

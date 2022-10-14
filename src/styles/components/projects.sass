@@ -1,0 +1,74 @@
+#Projects
+    gap: 3rem
+
+#projects-container
+    display: grid
+    width: 100%
+    grid-template-columns: repeat(auto-fit, 20.5rem)
+    gap: 1.5rem
+
+.project-card-container
+    height: 520px
+    width: 100%
+    justify-content: space-around
+    border: solid 1px transparent
+    background: var(--first-color)
+    background-clip: padding-box
+    border-radius: 10px
+
+    &:before
+        width: 20.5rem
+        height: inherit
+        content: ''
+        position: absolute
+        border-radius: 10px
+        box-shadow: 0 0 6px var(--fourth-color)
+        background: linear-gradient(to right top, #61b5fb, #58aef3, #4fa6eb, #469fe4, #3c98dc, #3592d5, #2d8ccf, #2586c8, #1e7fc1, #1678b9, #0c72b2, #006bab)
+        z-index: -1
+        margin: -1px
+
+.image-container
+    overflow: hidden
+    height: 200px
+    width: 90%
+    border-radius: 5px
+
+    img
+        width: 100%
+        height: 100%
+        transition: all 0.3s ease-in-out
+
+        &:hover
+            transform: scale(1.25)
+
+.tools-list
+    gap: 3.75rem
+
+.project-description-container
+    width: 90%
+    height: 6rem
+
+.project-links
+
+    *
+        transition: 0.5s ease-out
+
+    a:first-of-type
+        position: relative
+        left: -2rem
+        font-size: 25px
+
+        svg
+            fill: var(--third-color)
+
+            &:hover
+                transform: scale(1.1)
+
+    a:nth-of-type(2)
+        position: relative
+        left: - 0.7rem
+        padding: 7px
+        border-radius: 0 10px
+
+        &:hover
+            background-color: var(--second-color)

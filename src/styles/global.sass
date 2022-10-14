@@ -1,0 +1,80 @@
+@use 'variables'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    color: var(--third-color)
+
+:root
+    --first-color: #{variables.$dark-theme-first-color}
+    --second-color: #{variables.$dark-theme-second-color}
+    --third-color: #{variables.$dark-theme-third-color}
+    --fourth-color: #{variables.$dark-theme-fourth-color}
+    --nav-bg-color: #{variables.$dark-theme-nav-bg-color}
+    --first-font-family: #{variables.$first-font-family}
+    --second-font-family: #{variables.$second-font-family}
+    --third-font-family: #{variables.$third-font-family}
+    font-family: var(--second-font-family)
+    scroll-behavior: smooth
+
+body
+    background-color: var(--first-color)
+
+section:not(#Contact)
+    min-height: 90vh
+
+section
+    gap: 3rem
+
+    &:not(:first-of-type)
+        padding-top: 75px
+
+h2
+    font-size: 1.875rem
+    color: var(--fourth-color)
+
+h3
+    font-size: 1.5rem
+
+ul
+    list-style: none
+
+a
+    text-decoration: none
+    cursor: pointer
+
+h1, h2, h3, p:not(.project-description)
+    margin: 0 10px 0
+
+.light-theme
+    --first-color: #{variables.$light-theme-first-color}
+    --second-color: #{variables.$light-theme-second-color}
+    --third-color: #{variables.$light-theme-third-color}
+    --fourth-color: #{variables.$light-theme-fourth-color}
+    --nav-bg-color: #{variables.$light-theme-nav-bg-color}
+
+.flex
+    display: flex
+
+.align-center
+    align-items: center
+
+.justify-center
+    justify-content: center
+
+.column
+    flex-direction: column
+
+.button
+    font-family: var(--third-font-family)
+    font-weight: 700
+    font-size: 16px
+    background-color: var(--second-color)
+    padding: 10px
+    border-radius: 10px 2px 10px
+    transition: 0.6s
+
+    &:hover
+        background-color: var(--fourth-color)
+        color: var(--first-color)
