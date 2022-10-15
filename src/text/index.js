@@ -58,7 +58,7 @@ const text = {
               "html5",
               "css3"
             ],
-            "text": "Quer saber a previsão do tempo? Weather Noew é um aplicativo web simples que usa o consumo de API.",
+            "text": "Quer saber a previsão do tempo das próximas horas? Weather Now é um aplicativo web simples que usa o consumo de API.",
             "githubUrl": "https://github.com/marcosvag/weather-now",
             "liveUrl": "https://weather-now-ag.netlify.app/"
           },
