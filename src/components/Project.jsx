@@ -20,10 +20,10 @@ export function Project({ title, imgUrl, tech, text, githubUrl, liveUrl, liveTex
 
                 <p className="project-description">{text}</p></span>
             <span className="project-links flex align-center justify-center">
-                <a href={githubUrl} target="_blank">
+                <a href={githubUrl} target="_blank" aria-label={`See the source code from ${title}`}>
                     <Icon icon="github" />
                 </a>
-                <a href={liveUrl} target="_blank" className="see-live"> {liveText} </a>
+                <a href={liveUrl} target="_blank" className="see-live" > {liveText} </a>
             </span>
         </div>
 

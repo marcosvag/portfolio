@@ -21,7 +21,7 @@ export function Projects({ content }) {
           />
         ))}
       </div>
-      <a href="https://github.com/marcosvag" target="_blank" id="see-more" className="button">
+      <a href="https://github.com/marcosvag" target="_blank" id="see-more" className="button" aria-label="Visit all my repositories on GitHub">
         {content["more"]}
       </a>
     </section>

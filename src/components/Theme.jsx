@@ -6,7 +6,7 @@ export function Theme({ theme, changeTheme }) {
 
   return (
     <li className="flex align-center" onClick={() => changeTheme(nextTheme)}>
-      <button name="theme">
+      <button aria-label="Change theme">
         <Icon icon={nextIcon} />
       </button>
     </li>
