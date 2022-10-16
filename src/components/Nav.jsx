@@ -11,7 +11,7 @@ export function Nav({ navItem, currentTheme, onChangeTheme, onChangeLanguage }) 
 
   return (
     <nav className="flex align-center justify-center">
-      <button id="menu-hamburguer" class="menu-hamburguer align-center column" onClick={() => handleMenu()}>
+      <button aria-label="Navigation Menu" id="menu-hamburguer" class="menu-hamburguer align-center column" onClick={() => handleMenu()}>
         <span class="barra"></span>
         <span class="barra"></span>
         <span class="barra"></span>
@@ -25,12 +25,12 @@ export function Nav({ navItem, currentTheme, onChangeTheme, onChangeLanguage }) 
 
         <Theme theme={currentTheme} changeTheme={onChangeTheme} />
         <li id="pt" className='lang' onClick={() => onChangeLanguage('pt')}>
-          <button name="pt-BR">
+          <button aria-label="pt-BR">
             PT
           </button>
         </li>
         <li id="eng" className='lang' onClick={() => onChangeLanguage('en')}>
-          <button name="en-US">
+          <button aria-label="en-US">
             EN
           </button>
         </li>
