@@ -76,7 +76,7 @@ const text = {
           }
         ],
         "liveText": "Acessar",
-        "more": "Ver mais"
+        "more": "Todos projetos"
       },
       "contactSection": {
         "title": "Contato",
@@ -163,7 +163,7 @@ const text = {
           }
         ],
         "liveText": "See live",
-        "more": "See more"
+        "more": "All Projects"
       },
       "contactSection": {
         "title": "Contact",
