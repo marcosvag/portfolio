@@ -13,7 +13,7 @@ export function Project({ title, imgUrl, tech, text, githubUrl, liveUrl, liveTex
             </div>
             <ul className="tools-list flex align-center justify-center">
                 {
-                    tech.map(tec => <Icon icon={tec} key={tec} />)
+                    tech.map(tec => <li key={tec}><Icon icon={tec} /></li>)
                 }
             </ul>
             <span className="project-description-container flex align-center  column">
