@@ -19,7 +19,7 @@
             transition: all 0.3s
             content: ""
             position: absolute
-            background: var(--nav-bg-color)
+            background-color: var(--nav-bg-color)
             z-index: -1
             -webkit-backdrop-filter: blur(3px)
             backdrop-filter: blur(3px)
@@ -49,22 +49,21 @@
             transition: all 0.3s ease-in-out
             background-color: var(--second-color)
 
-        &.active .barra:nth-child(1)
-            transform: translateY(8px) rotate(45deg)
+        &.active .barra
 
-        &.active .barra:nth-child(2)
-            opacity: 0
+            &:nth-child(1)
+                transform: translateY(8px) rotate(45deg)
 
-        &.active .barra:nth-child(3)
-            transform: translateY(-8px) rotate(-45deg)
+            &:nth-child(2)
+                opacity: 0
+
+            &:nth-child(3)
+                transform: translateY(-8px) rotate(-45deg)
 
 @media(max-width: 376px)
     :root
         font-size: 14px
 
 @media(max-width: 330px)
-    #projects-container
-        grid-template-columns: repeat(auto-fit, 18rem)
-
-    .project-card-container:before
+    .project-card-container
         width: 18rem

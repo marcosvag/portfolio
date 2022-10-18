@@ -7,7 +7,7 @@ export function Projects({ content }) {
       <header>
         <h2 id="projects-title">{content["title"]}</h2>
       </header>
-      <div id="projects-container" className="justify-center">
+      <div id="projects-container" className="flex justify-center">
         {content["projects"].map((project, i) => (
           <Project
             title={project["title"]}

@@ -1,12 +1,11 @@
 #projects-container
-    display: grid
-    width: 100%
-    grid-template-columns: repeat(auto-fit, 20.5rem)
-    gap: 1.5rem
+    flex-wrap: wrap
+    gap: 2rem
+    margin: 0 10px
 
 .project-card-container
     height: 520px
-    width: 100%
+    width: 20.5rem
     justify-content: space-around
     border: solid 1px transparent
     background: var(--first-color)
@@ -14,7 +13,7 @@
     border-radius: 10px
 
     &:before
-        width: 20.5rem
+        width: inherit
         height: inherit
         content: ''
         position: absolute
